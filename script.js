@@ -1,7 +1,7 @@
 class Rectangle {
     constructor(width, height) {
         if (width <= 0 || height <= 0) {
-            throw new Error("Width and height must be positive integers.");
+            throw new Error("Width and height must be positive values.");
         }
         this._width = width;
         this._height = height;
@@ -23,7 +23,7 @@ class Rectangle {
 class Square extends Rectangle {
     constructor(side) {
         if (side <= 0) {
-            throw new Error("Side must be a positive integer.");
+            throw new Error("Side must be a positive value.");
         }
         super(side, side);
     }
